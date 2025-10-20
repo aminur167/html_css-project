@@ -1,0 +1,129 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #222;
+}
+
+/* Header */
+.top-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 12px 20px;
+}
+
+.top-header nav a {
+  margin-left: 16px;
+  text-decoration: none;
+  color: #5f6368;
+}
+
+.top-header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main content */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+}
+
+/* Logo */
+.logo {
+  font-size: 64px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.logo span.g1 { color: #4285F4; }
+.logo span.o1 { color: #DB4437; }
+.logo span.o2 { color: #F4B400; }
+.logo span.g2 { color: #4285F4; }
+.logo span.l  { color: #0F9D58; }
+.logo span.e  { color: #DB4437; }
+
+/* Search form */
+.search-form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.search-form input {
+  flex: 1;
+  padding: 10px 12px;
+  font-size: 16px;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px 0 0 24px;
+  outline: none;
+}
+
+.search-form button {
+  padding: 10px 16px;
+  border: 1px solid #dfe1e5;
+  border-left: none;
+  border-radius: 0 24px 24px 0;
+  background-color: #f8f9fa;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background-color: #e8e8e8;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: #e8e8e8;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 20px;
+  border-top: 1px solid #eee;
+  font-size: 13px;
+  color: #5f6368;
+}
+
+footer .footer-links a {
+  margin-right: 14px;
+  text-decoration: none;
+  color: #5f6368;
+}
+
+footer .footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .logo { font-size: 44px; }
+  .search-form input { font-size: 14px; }
+  .buttons { flex-direction: column; }
+  .buttons button { width: 100%; }
+}

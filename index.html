@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Clone</title>
+  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top-header">
+    <nav>
+      <a href="#">Gmail</a>
+      <a href="#">Images</a>
+    </nav>
+  </header>
+
+  <main class="main">
+    <div class="logo">
+      <span class="g1">G</span>
+      <span class="o1">o</span>
+      <span class="o2">o</span>
+      <span class="g2">g</span>
+      <span class="l">l</span>
+      <span class="e">e</span>
+    </div>
+
+    <form class="search-form" onsubmit="event.preventDefault(); alert('Search: '+document.getElementById('q').value);">
+      <input type="search" id="q" placeholder="Search Google or type a URL">
+      <button type="submit">🔍</button>
+    </form>
+
+    <div class="buttons">
+      <button onclick="alert('Google Search clicked')">Google Search</button>
+      <button onclick="alert('I\'m Feeling Lucky clicked')">I'm Feeling Lucky</button>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="#">Advertising</a>
+      <a href="#">Business</a>
+      <a href="#">About</a>
+    </div>
+    <div>Bangladesh</div>
+  </footer>
+</body>
+</html>
